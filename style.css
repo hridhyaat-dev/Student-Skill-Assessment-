@@ -1,0 +1,141 @@
+.logout-card{
+    text-align:center;
+    margin:30px auto;
+}
+.logout-card button{
+    padding:12px 0;
+    font-size:16px;
+}
+.assessment-title{
+    text-align:center;
+    margin-bottom:30px
+}
+.dashboard {
+    text-align: center;
+    color: black;
+}
+.result-item{
+    color: black;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#080808;
+    color:rgb(245, 242, 242);
+}
+.dashboard h1,
+.dashboard h2,
+.dashboard h3,
+.dashboard p{
+    color:rgb(250, 245, 245);
+}
+.topbar{
+    background-color:#dc2626;
+    color:white;
+}
+.topbar h1{
+    color:white;
+}
+header{
+    background:hsl(271, 96%, 43%);
+    padding:20px;
+    text-align:center;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.cart-info{
+    text-align:center;
+    margin:20px;
+    font-size:22px;
+}
+
+.products{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:30px;
+}
+
+.card{
+    background:#1e1e1e97;
+    width:280px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+button{
+    background:#d90404cb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    width:250px;
+    padding:12px 0;
+    font-size:16px;
+}
+
+button:hover{
+    background:#ff1745c1;
+}
+
+.cart-section{
+    width:80%;
+    margin:30px auto;
+    background:#1e1e1e;
+    padding:25px;
+    border-radius:15px;
+}
+
+.cart-section h2{
+    margin-bottom:20px;
+}
+
+#cart li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+    padding:10px;
+    background:#2c2c2c;
+    border-radius:8px;
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
