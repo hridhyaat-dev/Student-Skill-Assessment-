@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assessment Result</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .result-item{
+            margin:25px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align:center;margin-bottom:30px;">
+        Student Skill Assessment
+    </h1>
+
+    <div style="text-align:center; margin-bottom:30px;">
+
+        <h2 style="margin-bottom:30px;">Assessment Completed! 🎉</h2>
+
+        <h3 id="score"></h3>
+
+        <h3 id="performance"></h3>
+
+       <p class="result-item"><b>Strengths:</b> Programming Basics</p>
+
+       <p class="result-item"><b>Area to Improve:</b> Data Structures</p>
+
+       <p class="result-item"><b>Suggestion:</b> Practice more programming questions.</p> 
+        <br>
+
+        <button onclick="location.href='dashboard.html'">
+            Back to Dashboard
+        </button>
+
+    </div>
+
+    <script>
+        let score = localStorage.getItem("score");
+
+        document.getElementById("score").innerHTML =
+            "Your Score: " + score + " / 10";
+
+        if (score >= 8) {
+            document.getElementById("performance").innerHTML =
+                "Performance: Excellent ⭐";
+        }
+        else if (score >= 5) {
+            document.getElementById("performance").innerHTML =
+                "Performance: Good 👍";
+        }
+        else {
+            document.getElementById("performance").innerHTML =
+                "Performance: Needs Improvement";
+        }
+    </script>
+
+</body>
+</html>

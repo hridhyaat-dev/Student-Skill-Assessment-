@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Skill Assessment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h1 {
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 style="margin-left:30px;" class="assessment-title">Student Skill Assessment</h1>
+    <p style="margin-left:30px;">Test your programming knowledge</p>
+</header>
+
+<div class="container">
+    <h2 style="margin-left:30px;">Programming Skill Assessment</h2>
+
+<p style="margin-left:30px;">1. Which language is used to create the structure of a webpage?</p>
+<input type="radio" name="q1" value="HTML"> HTML<br>
+<input type="radio" name="q1" value="CSS"> CSS<br>
+<input type="radio" name="q1" value="Java"> Java<br>
+
+<p style="margin-left:30px;">2. Which language is used to style a webpage?</p>
+<input type="radio" name="q2" value="HTML"> HTML<br>
+<input type="radio" name="q2" value="CSS"> CSS<br>
+<input type="radio" name="q2" value="Python"> Python<br>
+
+<p style="margin-left:30px;">3. Which language adds interactivity to webpages?</p>
+<input type="radio" name="q3" value="HTML"> HTML<br>
+<input type="radio" name="q3" value="CSS"> CSS<br>
+<input type="radio" name="q3" value="JavaScript"> JavaScript<br>
+
+<p style="margin-left:30px;">4. Which symbol is used for a comment in JavaScript?</p>
+<input type="radio" name="q4" value="//"> //<br>
+<input type="radio" name="q4" value="##"> ##<br>
+<input type="radio" name="q4" value="<!--"> &lt;!-- --&gt;<br>
+
+<p style="margin-left:30px;">5. Which data structure follows FIFO?</p>
+<input type="radio" name="q5" value="Stack"> Stack<br>
+<input type="radio" name="q5" value="Queue"> Queue<br>
+<input type="radio" name="q5" value="Tree"> Tree<br>
+
+<p style="margin-left:30px;">6. Which data structure follows LIFO?</p>
+<input type="radio" name="q6" value="Queue"> Queue<br>
+<input type="radio" name="q6" value="Stack"> Stack<br>
+<input type="radio" name="q6" value="Array"> Array<br>
+
+<p style="margin-left:30px;">7. Which keyword is used to declare a variable in JavaScript?</p>
+<input type="radio" name="q7" value="let"> let<br>
+<input type="radio" name="q7" value="print"> print<br>
+<input type="radio" name="q7" value="display"> display<br>
+
+<p style="margin-left:30px;">8. What does HTML stand for?</p>
+<input type="radio" name="q8" value="Hyper Text Markup Language">
+Hyper Text Markup Language<br>
+<input type="radio" name="q8" value="High Text Machine Language">
+High Text Machine Language<br>
+<input type="radio" name="q8" value="Home Tool Markup Language">
+Home Tool Markup Language<br>
+
+<p style="margin-left:30px;">9. Which tag is used to create a hyperlink in HTML?</p>
+<input type="radio" name="q9" value="a"> &lt;a&gt;<br>
+<input type="radio" name="q9" value="p"> &lt;p&gt;<br>
+<input type="radio" name="q9" value="h1"> &lt;h1&gt;<br>
+
+<p style="margin-left:30px;">10. Which of these is a programming language?</p>
+<input type="radio" name="q10" value="Java"> Java<br>
+<input type="radio" name="q10" value="HTML"> HTML<br>
+<input type="radio" name="q10" value="CSS"> CSS<br>
+
+<br><br>
+
+<button onclick="calculateScore()">Submit Assessment</button>
+
+<h2 id="result"></h2>
+</div>
+
+<script>
+
+function calculateScore() {
+
+    let score = 0;
+
+    if (document.querySelector('input[name="q1"]:checked')?.value === "HTML") score++;
+    if (document.querySelector('input[name="q2"]:checked')?.value === "CSS") score++;
+    if (document.querySelector('input[name="q3"]:checked')?.value === "JavaScript") score++;
+    if (document.querySelector('input[name="q4"]:checked')?.value === "//") score++;
+    if (document.querySelector('input[name="q5"]:checked')?.value === "Queue") score++;
+    if (document.querySelector('input[name="q6"]:checked')?.value === "Stack") score++;
+    if (document.querySelector('input[name="q7"]:checked')?.value === "let") score++;
+    if (document.querySelector('input[name="q8"]:checked')?.value === "Hyper Text Markup Language") score++;
+    if (document.querySelector('input[name="q9"]:checked')?.value === "a") score++;
+    if (document.querySelector('input[name="q10"]:checked')?.value === "Java") score++;
+
+   localStorage.setItem("score", score);
+location.href = "result.html";
+}
+
+</script>
+
+</body>
+</html>

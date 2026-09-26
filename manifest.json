@@ -1,0 +1,9 @@
+{
+  "name": "Student Skill Assessment",
+  "short_name": "Skill Assessment",
+  "start_url": "login.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff0000",
+  "description": "Student Skill and Assessment System"
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logout-card{
+            text-align:center;
+            margin:30px auto;
+            width:250px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="topbar">
+    <h1>Student Skill Assessment</h1>
+    <span>👤 Student</span>
+</header>
+
+<div class="dashboard">
+
+    <h2>Welcome, Student! 👋</h2>
+    <p>Track your skills, take assessments and improve your performance.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>👤 Personal Information</h3>
+            <p>View and manage your personal information.</p>
+            <button onclick="location.href='profile.html'">
+                View Profile
+            </button>
+        </div>
+        <div class="card">
+            <h3>📝 Assessment</h3>
+            <p>Take a skill-based test.</p>
+            <button onclick="location.href='assessment.html'">
+                Start Test
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>📊 My Results</h3>
+            <p>Check your assessment score.</p>
+            <button onclick="location.href='result.html'">
+                View Results
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>📈 Progress</h3> 
+            <p>Track your skill development.</p>
+            <button onclick="location.href='progress.html'">
+                View Progress
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>💡 Suggestions</h3>
+            <p>Get suggestions for improvement.</p>
+            <button onclick="location.href='suggestions.html'">
+                View Suggestions
+            </button>
+        </div>
+        <div class="card">
+            <h3>🎯 Skills</h3>
+            <p>View your individual skills.</p>
+            <button onclick="location.href='skills.html'">
+                View Skills
+            </button>
+        </div>
+
+    </div>
+    <div class="logout-card">
+    <button onclick="logout()">
+        🚪 Logout
+    </button>
+</div>
+
+<script>
+function logout() {
+    let confirmLogout = confirm("Logout from your account?");
+
+    if (confirmLogout) {
+        window.location.href = "login.html";
+    }
+}
+</script>
+</div>
+</body>
+</html>
